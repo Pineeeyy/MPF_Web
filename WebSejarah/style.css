@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('assets/petaNusantara.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(92, 64, 51, 0.7);
+  z-index: -1;
+  pointer-events: none;
+}
+
+header, #hero, .container, footer {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f5a623;
+}
+
+#hero {
+  background: url('../images/header-bg.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 6rem 1rem;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #f5a623;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e5941c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#highlights {
+  background-color: transparent;
+  padding: 2rem 0;
+}
+
+#highlights .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.highlight-box {
+  flex: 1;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border-left: 4px solid #f5a623;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: #fff;
+}
+
+header {
+  background-color: rgba(51, 51, 51, 0.85);
+}
+
+.wars-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.wars-table th,
+.wars-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.organization-list {
+  list-style: none;
+  padding: 0;
+}
+
+.organization-list li {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 3px solid #f5a623;
+  border-radius: 8px;
+}
+
+.page-content {
+  padding: 2rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #fff;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0.5rem;
+  padding: 1rem;
+  border-left: 3px solid #f5a623;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.info-box h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.timeline-line {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timeline-item {
+  border: 2px solid #f5a623;
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item:hover {
+  transform: scale(1.03);
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.timeline-item .content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.timeline-item .content p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fdfdfd;
+  line-height: 1.6;
+}
+
+.highlight-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.highlight-box {
+  flex: 1;
+  min-width: 200px;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 4px solid #f5a623;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-box h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.highlight-box p {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
